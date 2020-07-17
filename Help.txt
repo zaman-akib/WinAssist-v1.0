@@ -1,4 +1,11 @@
 Instructions to Perform some Tasks with The Help of pA ----->>
+<To log in you need to use the username and password given here>
+
+username: akib
+password: 1100
+
+<As I haven't added any database in this project so you need to use this username and password to use this software.
+You can edit usernames & password in the java codes>
 
 1. Normal Conversation with Your pA Arya :
    Just ask normal questions like- "hi" / "how are you" etc.
