@@ -1,1 +1,5 @@
-akib 1100
+username: akib
+password: 1100
+
+<As I haven't added any database in this project so you need to use this username and password to use this software.
+You can edit usernames & password in the java codes>
