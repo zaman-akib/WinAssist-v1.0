@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="650.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.MainController">
+   <left>
+      <AnchorPane prefHeight="528.0" prefWidth="142.0" style="-fx-background-color: #2f4f4f;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="5.0" layoutY="8.0" mnemonicParsing="false" onAction="#openRecentFiles" prefHeight="47.0" prefWidth="132.0" text="Recent">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="5.0" layoutY="68.0" mnemonicParsing="false" onAction="#takeScreenshot" prefHeight="48.0" prefWidth="132.0" text="ScreenShot">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="6.0" layoutY="130.0" mnemonicParsing="false" onAction="#openCalculator" prefHeight="46.0" prefWidth="130.0" text="Calculator">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="7.0" layoutY="597.0" mnemonicParsing="false" onAction="#feedback" prefHeight="46.0" prefWidth="130.0" text="FeedBack">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="7.0" layoutY="540.0" mnemonicParsing="false" onAction="#aboutButton" prefHeight="46.0" prefWidth="131.0" text="About">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="7.0" layoutY="481.0" mnemonicParsing="false" onAction="#helpButton" prefHeight="48.0" prefWidth="131.0" text="Help">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="7.0" layoutY="419.0" mnemonicParsing="false" onAction="#manageSettings" prefHeight="49.0" prefWidth="131.0" text="Settings">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <FlowPane alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="459.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ToolBar prefHeight="30.0" prefWidth="82.0">
+                     <items>
+                        <Circle fx:id="topMin" fill="DODGERBLUE" onMouseClicked="#minimizeProgram" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#ffd71f" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="topClose" fill="#ff411f" onMouseClicked="#exitAction" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                     </items></ToolBar>
+               </children>
+            </FlowPane>
+         </top>
+         <bottom>
+            <FlowPane alignment="CENTER_RIGHT" hgap="5.0" prefHeight="36.0" prefWidth="459.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="closeButton" mnemonicParsing="false" onAction="#handleCloseButtonAction" prefHeight="34.0" prefWidth="104.0" text="Close">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+         </bottom>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <top>
+                  <FlowPane alignment="CENTER_RIGHT" hgap="5.0" prefHeight="33.0" prefWidth="459.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="txtYoutube" onAction="#youtubeSearch" prefHeight="31.0" prefWidth="203.0" promptText="Search in Youtube...">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="ySearch" mnemonicParsing="false" onAction="#youtubeSearch" prefHeight="31.0" prefWidth="73.0" text="YSearch">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtGoogle" prefHeight="30.0" prefWidth="186.0" promptText="Search in Google...">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="gSearch" mnemonicParsing="false" onAction="#googleSearch" prefHeight="31.0" prefWidth="75.0" text="GSearch">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </FlowPane>
+               </top>
+               <bottom>
+                  <TextField fx:id="txtEnter" onAction="#txtFieldTask" prefHeight="31.0" prefWidth="459.0" promptText="Ask Alice Here..." BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Italic" size="16.0" />
+                     </font>
+                  </TextField>
+               </bottom>
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <center>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <top>
+                              <BorderPane prefHeight="381.0" prefWidth="508.0" BorderPane.alignment="CENTER">
+                                 <center>
+                                    <Separator prefHeight="8.0" prefWidth="508.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                                 <bottom>
+                                    <WebView fx:id="browser" fontScale="0.8" prefHeight="351.0" prefWidth="558.0" BorderPane.alignment="CENTER" />
+                                 </bottom>
+                                 <top>
+                                    <AnchorPane prefHeight="126.0" prefWidth="508.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <ImageView fitHeight="107.0" fitWidth="127.0" layoutX="210.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@assets/images/Alexa.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ProgressBar fx:id="bar" layoutX="182.0" layoutY="107.0" prefHeight="18.0" prefWidth="180.0" progress="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </top>
+                              </BorderPane>
+                           </top>
+                        </BorderPane>
+                     </center>
+                     <top>
+                        <AnchorPane prefHeight="32.0" prefWidth="558.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button alignment="CENTER" layoutX="181.0" layoutY="1.0" mnemonicParsing="false" onAction="#openTranslator" prefHeight="28.0" prefWidth="173.0" text="Google Translator">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

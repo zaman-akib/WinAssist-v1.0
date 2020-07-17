@@ -1,0 +1,30 @@
+Instructions to Perform some Tasks with The Help of pA ----->>
+
+1. Normal Conversation with Your pA Arya :
+   Just ask normal questions like- "hi" / "how are you" etc.
+2. Mathematical calculation:
+   a. Add: Type- "50+30"
+   b. Sub: Type- "50-30"
+   c. Mult: Type- "50*30"
+   d. Div: Type- "50/30"
+   e. Power: Type- "50^30"
+   f. Root: Type- "root 30"
+3. To Know Date & Time:
+   Type- "date" / "time" / "tell me todays date & time"
+4. Browse in Internet:
+   Type- "www.google.com" / "www.@anywesitename.com"
+5. To Search in Google/Youtube:
+   Type- "google>>searched item" / "youtube>>searched item"
+6. To Open/Run a File/Software from C drive:
+   Type- "open>>folder name" / "run>>software name"
+   To open a file add the file extension like- "open>>file.txt"
+7. To Save/Remind/Note Something:
+   type- "save>>the notes you want to save"
+   To Get The Saved Notes type- "reminder" / "memory"
+8. To Get The Recent Files:
+   Type- "recent" // "recent files"
+
+Please contact us for further help/query:
+akib.mist@gmail.com
+or
+rohitzaman00@gmail.com

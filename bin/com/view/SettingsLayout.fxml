@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.SettingsController">
+   <children>
+      <Label alignment="CENTER" layoutX="73.0" layoutY="45.0" prefHeight="30.0" prefWidth="389.0" text="Do You Want To Change Your Username or Password ?" textFill="#6f1b40">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="122.0" prefHeight="30.0" prefWidth="127.0" text="Username" textFill="#6f1b40">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="178.0" prefHeight="30.0" prefWidth="127.0" text="Old Password" textFill="#6f1b40">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="236.0" prefHeight="30.0" prefWidth="127.0" text="New Password" textFill="#6f1b40">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newUsername" layoutX="220.0" layoutY="122.0" prefHeight="30.0" prefWidth="198.0" promptText="New Username" />
+      <PasswordField fx:id="oldPassword" layoutX="220.0" layoutY="181.0" prefHeight="30.0" prefWidth="198.0" promptText="Old Password" />
+      <PasswordField fx:id="newPassword" layoutX="220.0" layoutY="239.0" prefHeight="30.0" prefWidth="198.0" promptText="New Password" />
+      <Button layoutX="294.0" layoutY="361.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="30.0" prefWidth="127.0" text="Save Changes">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="220.0" layoutY="301.0" prefHeight="17.0" prefWidth="297.0" text="* You'll be auto logged out if you save the changes !" textFill="#6f1b40">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelButton" layoutX="432.0" layoutY="361.0" mnemonicParsing="false" onAction="#closeSettings" prefHeight="30.0" prefWidth="103.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="oldPassLabel" alignment="CENTER_RIGHT" layoutX="282.0" layoutY="211.0" prefHeight="17.0" prefWidth="135.0" textFill="#ee1e07">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

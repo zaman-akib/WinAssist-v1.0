@@ -1,0 +1,11 @@
+Version: WinAssist 1.0
+
+Copyright: Akib Uz Zaman & Syed Rohit Zaman
+
+Contact:
+akib.mist@gmail.com
+or
+rohitzaman00@gmail.com
+
+N.B. This is a project based work. We want user feedbacks to develop
+     this project.

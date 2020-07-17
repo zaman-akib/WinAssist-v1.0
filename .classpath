@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/guava-22.0.jar"/>
+	<classpathentry kind="lib" path="lib/java-flac-encoder-0.3.8-sources.jar"/>
+	<classpathentry kind="lib" path="lib/java-flac-encoder-0.3.8.jar"/>
+	<classpathentry kind="lib" path="lib/java-google-speech-api-V2.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/java-google-speech-api-V2.1.jar"/>
+	<classpathentry kind="lib" path="lib/jfoenix-9.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/jfoenix.jar"/>
+	<classpathentry kind="lib" path="lib/jlayer-1.0.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/jlayer-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/json-20150729-sources.jar"/>
+	<classpathentry kind="lib" path="lib/json-20150729.jar"/>
+	<classpathentry kind="lib" path="lib/gtranslateapi-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/jl1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
